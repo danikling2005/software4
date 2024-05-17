@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.js">
     <title>Naturalis</title>
 </head>
 <header>
@@ -18,6 +19,22 @@
         Un movimento que nace en 2021, LA INICIATIVA DE RIOS LIMPIOS, comienza a travez de un grupo de voluntarios con la necesidad de hacer algo al respecto con la basura y la contaminacion de los futuros de los niños.
         La limpieza de los rios se fue realizando accediendo a los puentes de las zonas del departamento las colonias, puente cirilo, flessia, perlo, etc.
     </p>
+<br>
+    <div class="carousel">
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <div class="slides">
+          <div class="slide"><img src="nuestro equipo.png" alt="Imagen 1"></div>
+          <div class="slide"><img src="esperanza.png" alt="Imagen 2"></div>
+          <div class="slide"><img src="cirilo.png" alt="Imagen 3"></div>
+          <div class="slide"><img src="flesia.png" alt="image 4"></div>
+          <div class="slide"><img src="nuevo torino.png" alt="imagen 5"></div>
+          <div class="slide"><img src="colonia rivadavia.png" alt="imagen 6"></div>
+          <div class="slide"><img src="canal de rafaela.png" alt="imagen 7"></div>
+          <div class="slide"><img src="paloma.png" alt=""></div>
+        </div>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+      </div>
+      <script src="index.js"></script>
     <br>
     <h1 class="titulo"><center>NUESTROS LOGROS.</center></h1>
     <p class="texto">
@@ -26,31 +43,53 @@
         Una vez al mes nos reunimos a limpiarla, haciendo nuestro trabajo más fácil y menos riesgoso. 
     </p>
     <br>
-    <div class="carousel">
-        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-        <div class="slides">
-          <div class="slide"><img src="BIOBARDA.png" alt="Imagen 1"></div>
-          <div class="slide"><img src="BIOBARDA1.png" alt="Imagen 2"></div>
-          <div class="slide"><img src="BIOBARDA2.png" alt="Imagen 3"></div>
+    <div class="fila">
+        <div class="columnas">
+            <img src="BIOBARDA.png" width="300px" height="300px">
         </div>
-        <button class="next" onclick="moveSlide(1)">&#10095;</button>
-      </div>
-    
-      <script src="index.js"></script>
+        <div class="columnas">
+            <img src="BIOBARDA1.png" width="300px" height="300px">
+        </div>
+        <div class="columnas">
+            <img src="BIOBARDA2.png" width="300px" height="300px">
+        </div>
+    </div>
     <br>
     <p class="texto">
         En el año 2024 acordamos con la comuna de Humboldt que la limpieza de la BIOBARDA este a cargo de ellos,
         pudiendo así los voluntarios trabajar en conjunto con las escuelas para realizar con los niños BIOBARDAS
         en la región y buscar el compromiso de los gobiernos locales para su mantenimiento y limpieza.
     </p>
-    <br>
-    <h1 class="titulo"><center>SI TE INTERESA UNIRTE.</center></h1>
-    <p class="texto">
-        Si te interesa nuestra propuesta y quieres colaborar con nosotros como voluntario 
-        tenemos un grupo de WhatsApp cerrado donde comunicamos días y horarios que nos reunimos.
-        Si se te complica asistir, pero igual deseas colaborar siempre hacen falta cosas,
-        podes comunicarte por privado o transferir para la nafta.
-    </p>
-
+<br>
 </body>
+<footer>
+    <div class="fila1">
+        <div class="columnas1">
+            <h1 class="encabezado"><center>ENCONTRANOS:</center></h1>
+            <div class="contenedor">
+                <img src="whatsapp.png" alt="whatsapp" width="40" height="40">
+                <div class="textowhasap">
+                    <h1>3496 345678</h1>
+                </div>
+            </div>   
+            <div class="contenedor">
+                <img src="instagram.png" alt="instagram" width="40" height="40">
+                <div class="textoinsta">
+                    <h1>iniciativarioslimpios</h1>
+                </div>
+            </div>      
+        </div>
+        <div class="columnas1">
+            <h1 class="encabezado">PARA COLABORAR CON NOSOTROS:</h1>
+            <div class="contenedor">
+                <a href="https://www.mercadopago.com.ar/">
+                     <img  class="pago" src="mercado pago.png" >
+                </a>
+                <div class="textopago">
+                    <h1>ALIAS: RiosLimpios:MP</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
 </html>

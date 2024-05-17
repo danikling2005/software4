@@ -8,7 +8,7 @@ header{
     background-color: #1B3847;
 }
 body{
-  background-color: #afc4d1;
+  background-color: #BACEDB;
 }
 .logo{
     height: 250px;
@@ -20,12 +20,15 @@ body{
     min-width: 100px;
     min-height: auto;
 }
+.titulo{
+  font-family: Baskerville Old Face;
+}
 .texto{
     padding-left: 5em;
     padding-right: 5em;
     font-size: 1.2em;
-    text-align: center;
-    font-family:Cambria;
+    text-align: justify;
+    font-family:Arial;
 }
 
 .carousel {
@@ -53,10 +56,86 @@ body{
     cursor: pointer;
     padding: 10px;
   }
-  
-  .prev {
+  .columnas{
+    float: left;
+    width: 30%;
+    padding-right: 5px;
+    top: 2em;
+}
+.fila::after{
+    content: " ";
+    clear: both;
+    display: table;
+    left: 20px;
+    top: 2em;
+}
+.columnas img{
+    position: relative;
+    display: flex;
+    left: 6.5em;
+    margin: 15px;
+}
+.prev {
     left: 0;
   }
-  .next {
+.next {
     right: 0;
   }
+
+footer{
+  background-color: #1B3847;
+}
+.columnas1{
+  float: left;
+  width: 49.6%;
+  padding-right: 5px;
+  top: 2em;
+  overflow-y: hidden;
+}
+.fila1::after{
+  content: " ";
+  clear: both;
+  display: table;
+  left: 20px;
+  top: 2em;
+}
+.columnas1 img{
+  position: relative;
+  display: flex;
+  left: 6.5em;
+  margin: 15px;
+}
+.contenedor {
+  display: flex;
+  overflow-y: hidden;
+  z-index: 3;
+}
+.textowhasap{
+  position: relative;
+  display: flex;
+  left: 120px;
+  bottom: -15px;
+  color: #BACEDB;
+}
+.textoinsta{
+  position: relative;
+  display: flex;
+  margin-left: 120px;
+  bottom: -15px;
+  color: #BACEDB;
+}
+.textopago{
+  position: relative;
+  display: flex;
+  margin-left: 40px;
+  bottom: -15px;
+  font-size: 13px;
+  color: #BACEDB;
+}
+.pago{
+  width: 40%;
+  height: 40%;
+}
+.encabezado{
+  color: aliceblue;
+}
